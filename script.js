@@ -25,3 +25,23 @@ function addListAfterKeypress(event){
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+// function lineThrough (){
+// 	console.log(this);
+// 	this.classList.toggle("done");
+// }
+
+// for(i=0;i<x.length;i++){
+// 	x[i].addEventListener("click",lineThrough);
+// }
+
+button.addEventListener("click", addListAfterClick);
+
+input.addEventListener("keypress", addListAfterKeypress);
+
+function toggleClassDoneOnAndOff(event) {
+	console.log(event);
+    if (event.target.tagName === "LI") {
+        event.target.classList.toggle("done");
+    }
+}
+ul.addEventListener("click", toggleClassDoneOnAndOff);
